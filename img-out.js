@@ -1,6 +1,6 @@
 $(function() {
     $("#btnSave").click(function() {
-        html2canvas($("#mapboxgl-canvas-container"), {
+        html2canvas($("#map"), {
             onrendered: function(canvas) {
                 theCanvas = canvas;
                 document.body.appendChild(canvas);
@@ -9,7 +9,6 @@ $(function() {
 					saveAs(blob, "neighborhood.png");
 				});
             },
-            timeout: 5000
         });
     });
 });
