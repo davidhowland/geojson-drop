@@ -4,7 +4,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
     center: [-14.66,-23.64],
-    zoom: 3
+    zoom: 3,
+    preserveDrawingBuffer: true
 });
 
 // object to hold geojson
