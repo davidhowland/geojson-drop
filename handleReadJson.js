@@ -189,8 +189,8 @@ onmessage = function(e) {
     var id = "mgl_drop_" + randomString(5) + "_" + fileName ;
     // Set random color
     var ran = Math.random();
-    var colA = randomHsl(0.1, ran);
-    var colB = randomHsl(0.5, ran);
+    var colA = "rgb(251, 113, 57)";
+    var colB = "rgb(251, 113, 57)";
 
     // Set default type from geojson type
     var typ = geomTypes[0];
