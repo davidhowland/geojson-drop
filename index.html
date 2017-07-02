@@ -8,15 +8,21 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.css' rel='stylesheet' />
     <link href='progress.css' rel='stylesheet' />
     <link href='app.css' rel='stylesheet' />
+    <script src='html2canvas.js'></script>
+    <script src='FileSaver.js'></script>
+    <script src='img-out.js'></script>
   </head>
   <body>
     <div id='header'>
       <h1>Neighborhood Mapper</h1>
       <p>Drag and drop a neighborhood geojson file onto the map.</p>
+      <input type="button" id="btnSave" value="Save PNG"/>
     </div>
     <div id='map'></div>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.23.0/mapbox-gl.js'></script>
     <script src='helpers.js'></script>
     <script src='app.js'></script>
+
+    <div id='img'></div>
   </body>
 </html>
